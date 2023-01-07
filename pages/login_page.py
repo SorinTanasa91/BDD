@@ -14,3 +14,6 @@ class LoginPage(Browser):
 
     def go_to_login_page(self):
         self.driver.get('https://www.saucedemo.com/')
+
+    def set_user_name(self,user_name):
+        self.driver.find_element(*self.USERNAME_INPUT).send_keys(user_name)
