@@ -1,7 +1,7 @@
-from behave import *
+from behave import*
 
 
-@given('login: I am not an user on the login page')
+@given('login: I am an user on the login page')
 def step_impl(context):
     context.login_page.go_to_login_page()
 
@@ -11,7 +11,7 @@ def step_impl(context, user):
     context.login_page.set_user_name(user)
 
 
-@when('login: I fill the password with a wrong value "pwd"')
+@when('login: I fill the password with a wrong value "{pwd}"')
 def step_impl(context, pwd):
     context.login_page.set_password(pwd)
 
