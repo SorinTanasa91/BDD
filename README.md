@@ -10,7 +10,8 @@
 4.Fisiere browser -contine instructiuni de instalare si deschidere browser
 5.Fisiser environment -contine instantierea tuturor claselor de tip pages
 
-*Metodologii de lucru
+*Metodologii de lucru:
+
 1.Waterfall:
 - stricta
 - orice modificare necesara dupa inceperea proiectului va trebui implementata intr-un proiect nou
