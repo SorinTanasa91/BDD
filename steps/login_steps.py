@@ -24,3 +24,7 @@ def step_impl(context):
 @then('login: Error message is display with the message "{error_message}"')
 def step_impl(context, error_message):
     context.login_page.display_error_message(error_message)
+
+@then('inventory: The URL has changed to "https://www.saucedemo.com/inventory.html"')
+def step_impl(context):
+    context.inventory_page.goto_inventory_pageURL()
