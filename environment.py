@@ -7,3 +7,4 @@ def before_all(context):
     context.inventory_page = InventoryPage()
 def after_all(context):
     context.browser.close()
+

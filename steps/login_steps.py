@@ -25,6 +25,6 @@ def step_impl(context):
 def step_impl(context, error_message):
     context.login_page.display_error_message(error_message)
 
-@then('inventory: The URL has changed to "https://www.saucedemo.com/inventory.html"')
+@then('inventory: The URL has changed')
 def step_impl(context):
     context.inventory_page.goto_inventory_pageURL()

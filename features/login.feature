@@ -14,13 +14,13 @@ Feature: Check the login functionality
       Given login: I am not an user on the login page
       When login: Click the login button
       Then login: Error message is displayed with the message: "Epic sadface: Username is required"
-    @test1
+    @login
     Scenario: Try to login with correct values
       Given login: I am an user on the login page
       When login:I fill the username with wrong values "standard_user"
       When login:I fill the password with the wrong value "secret_sauce"
       When login:I click the login button
-      Then Inventory: The url has changed to 'https://www.saucedemo.com/inventory.html'
+      Then Inventory: The url has changed
 
     @outline_test
     Scenario Outline: Try to login with different values
