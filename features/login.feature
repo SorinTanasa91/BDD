@@ -17,8 +17,8 @@ Feature: Check the login functionality
     @login
     Scenario: Try to login with correct values
       Given login: I am an user on the login page
-      When login:I fill the username with wrong values "standard_user"
-      When login:I fill the password with the wrong value "secret_sauce"
+      When login:I fill the username with values "standard_user"
+      When login:I fill the password with value "secret_sauce"
       When login:I click the login button
       Then Inventory: The url has changed
 
