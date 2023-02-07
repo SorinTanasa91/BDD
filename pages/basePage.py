@@ -1,10 +1,13 @@
 from selenium.webdriver.common.by import By
 
 from browser import Browser
-class basePage(Browser):
+
+
+class BasePage(Browser):
     USERNAME_INPUT = (By.ID, "user-name")
     PASSWORD_INPUT = (By.ID, "password")
     LOGIN_BUTTON = (By.ID, 'login-button')
+
     def set_user_name(self, user_name):
         self.driver.find_element(*self.USERNAME_INPUT).send_keys(user_name)
 

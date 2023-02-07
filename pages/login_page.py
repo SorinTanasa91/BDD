@@ -4,9 +4,10 @@ from selenium.webdriver.common import by
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from browser import Browser
-from basePage import basePage
+from basePage import BasePage
 
-class LoginPage(basePage):
+
+class LoginPage(BasePage):
     USERNAME_INPUT = (By.ID, "user-name")
     PASSWORD_INPUT = (By.ID, "password")
     LOGIN_BUTTON = (By.ID, 'login-button')

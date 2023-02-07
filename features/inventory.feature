@@ -6,6 +6,7 @@ Feature: Check inventory functionality
     When login:I click the login button
     Then inventory: I am in an inventory page
 
+    @test1
     Scenario: Inventory click settings button
       When inventory: I click on the settings button
       Then inventory: Settings list is displayed

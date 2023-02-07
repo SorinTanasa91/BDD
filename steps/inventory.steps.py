@@ -6,3 +6,7 @@ def step_impl(context):
 @then ('inventory: I am in an inventory page')
 def step_impl(context):
     context.inventory_page.goto_inventory_pageURL()
+
+@then ('inventory: Settings list is displayed')
+def step_impl(context):
+    context.inventory_page.check_settings_list()
