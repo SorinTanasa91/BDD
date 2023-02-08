@@ -4,7 +4,9 @@ from selenium.webdriver.common import by
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from browser import Browser
-from basePage import BasePage
+import base_Page
+
+from pages.base_Page import BasePage
 
 
 class LoginPage(BasePage):

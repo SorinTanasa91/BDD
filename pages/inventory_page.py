@@ -1,6 +1,10 @@
 # from browser import Browser
-from basePage import BasePage
+import pages as pages
+
+from base_Page import BasePage
 from selenium.webdriver.common.by import By
+from pages.base_Page import BasePage
+import base_Page
 
 
 class InventoryPage(BasePage):
