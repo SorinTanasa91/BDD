@@ -1,11 +1,5 @@
-# from browser import Browser
-import pages as pages
-
-from base_Page import BasePage
 from selenium.webdriver.common.by import By
 from pages.base_Page import BasePage
-import base_Page
-
 
 class InventoryPage(BasePage):
     SETTINGS_BTN = (By.XPATH, "//button[@id='react-burger-menu-btn']")

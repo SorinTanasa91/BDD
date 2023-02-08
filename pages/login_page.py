@@ -1,10 +1,6 @@
 from selenium.common import NoSuchElementException
-from selenium.webdriver.chrome import webdriver
-from selenium.webdriver.common import by
-from webdriver_manager.chrome import ChromeDriverManager
+
 from selenium.webdriver.common.by import By
-from browser import Browser
-import base_Page
 
 from pages.base_Page import BasePage
 
