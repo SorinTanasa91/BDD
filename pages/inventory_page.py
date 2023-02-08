@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from pages.base_Page import BasePage
 
+
 class InventoryPage(BasePage):
     SETTINGS_BTN = (By.XPATH, "//button[@id='react-burger-menu-btn']")
     LOGO_ICON = (By.CLASS_NAME, 'app_logo')

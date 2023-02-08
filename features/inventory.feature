@@ -11,3 +11,11 @@ Feature: Check inventory functionality
       When inventory: I click on the settings button
       Then inventory: Settings list is displayed
 
+    @test2
+    Scenario: Check if logo is displayed
+    Then inventory: Logo is displayed
+
+    @test3
+    Scenario:Click the cart icon
+      When inventory: I click on the cart
+      Then cart: Url has changed
